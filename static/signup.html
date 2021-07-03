@@ -1,0 +1,53 @@
+<div class="modals-content">
+    <span id="closeBtn" class="modals-closeBtn">&times;</span>
+    <div class="modals-header">
+        <h5>Sign up</h5>
+        <hr>
+    </div>
+    <div class="modals-bodySign">
+        <div class="container">
+            <form action="/signup" method="post">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="first_name" autocomplete="off"
+                            placeholder="First name" name="first_name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="last_name" autocomplete="off"
+                            placeholder="Last name" name="last_name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fas fa-flag-usa text-dark"></i> &nbsp;+1
+                                </span>
+                            </div>
+                            <input type="tel" class="form-control" placeholder="10 digit mobile number"
+                                aria-label="10 digit mobile number" aria-describedby="basic-addon1"
+                                pattern="[1-9]{1}[0-9]{9}" minlength="10" maxlength="10" name="mobile_number" required>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" autocomplete="off" placeholder="Email" name="email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" id="first_name" autocomplete="off"
+                            placeholder="Create password" minlength="8" title="Minnimum length of 8 characters"
+                            name="password" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" id="first_name" autocomplete="off"
+                            placeholder="Confirm password" name="confirm_password">
+                    </div>
+                </div>
+                <input id="typeP" type="hidden" name="typeP" value="">
+                <input id="building_nameP" type="hidden" name="building_nameP" value="">
+                <button class="btn btn-danger" type="submit">Done!</button>
+            </form>
+        </div>
+    </div>
